@@ -1,9 +1,9 @@
 #[cfg(test)]
-mod gistcafe {
+pub mod gistcafe {
 
     use::serde_json::*;
 
-    mod inspect {
+    pub mod inspect {
 
         use serde_json::*;
         use std::*;
