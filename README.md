@@ -44,7 +44,7 @@ inspect::print_dump_table_columns(&org_repos[1..=10].to_vec(),
 
 Which outputs:
 
-```rust
+```
 Top 3 rust-lang GitHub Repos:
 [
   {
