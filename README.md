@@ -39,6 +39,14 @@ async fn main() {
     print_dump(&org_repos[1..=3]);
 
     println!("\nTop 10 {} GitHub Repos:", org_name);
+    print_dump_table(&org_repos[1..=10].iter().map(|x| json!({
+        "name":        x["name"],
+        "lang":        x["lang"],
+        "watchers":    x["watchers"],
+        "forks":       x["forks"],
+    }).as_object().unwrap().clone()).collect());
+
+    println!("\nTop 10 {} GitHub Repos:", org_name);
     print_dump_table_columns(&org_repos[1..=10].to_vec(), 
         vec!["name", "lang", "watchers", "forks"]);
 }
