@@ -1,7 +1,13 @@
 [package]
 name = "gistcafe"
 version = "0.1.0"
+description = "Useful gist.cafe utils"
+homepage = "https://gist.cafe"
+license = "BSD-3-Clause-Attribution"
 authors = ["ServiceStack, Inc. <team@servicestack.net>"]
+repository = "https://github.com/ServiceStack/gistcafe-rust/"
+readme = "README.md"
+keywords = ["servicestack", "gistcafe"]
 edition = "2018"
 
 [dependencies]
